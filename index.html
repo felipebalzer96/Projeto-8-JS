@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Cadastro de Filmes e series</h1>
+    <div class="cadastro">
+        <label for="nome">Nome do filme no Brasil</label>
+        <input type="text" id="nome" name="nome">
+    </div>
+
+    <div class="cadastro">
+        <label for="original">Nome do filme original</label>
+        <input type="text" id="original" name="original">
+    </div>
+
+    <div class="cadastro">
+        <label for="diretor">Nome do diretor</label>
+        <input type="text" id="diretor" name="diretor">
+    </div>
+
+    <div class="cadastro">
+        <label for="data">Data de estreia no cinema</label>
+        <input type="date" id="data" name="data">
+    </div>
+
+    <div class="classificacao">
+      <label class="titulo_classificacao">Classificação indicativa</label> <br>  
+    <input type="radio" value="livre" name="classificacao" id="livre"><label for="livre">Livre</label> <br>
+    <input type="radio" value="10Anos" name="classificacao" id="10Anos"><label for="10Anos">Não recomendado para menores de 10 anos</label> <br>
+    <input type="radio" value="12Anos" name="classificacao" id="12Anos"><label for="12Anos">Não recomendado para menores de 12 anos</label> <br>
+    <input type="radio" value="14Anos" name="classificacao" id="14Anos"><label for="14Anos">Não recomendado para menores de 14 anos</label> <br>
+    <input type="radio" value="16Anos" name="classificacao" id="16Anos"><label for="16Anos">Não recomendado para menores de 16 anos</label> <br>
+    <input type="radio" value="18Anos" name="classificacao" id="18Anos"><label for="18Anos">Não recomendado para menores de 18 anos</label>
+</div>
+
+<div class="genero">
+    <label>Gênero</label>
+    <select name="generosFilmes" id="generosFilmes">
+        <option value="aventura">Aventura</option>
+        <option value="acao">Ação</option>
+        <option value="animacao">Animaçao</option>
+        <option value="romance">Romance</option>
+        <option value="musical">Musical</option>
+        <option value="suspense">Suspense</option>
+        <option value="terror">Terror</option>
+        <option value="ficcaoCientifica">Ficção Cientifica</option>
+    </select>
+</div>
+
+<div class="idiomas">
+    <label class="idiomas_disponiveis">Idiomas de audio disponiveis</label><br>
+   <input type="checkbox" name="ingles" id="ingles"><label for="ingles">Inglês</label><br>
+   <input type="checkbox" name="portugues" id="portugues"><label for="portugues">Portugês</label><br>
+   <input type="checkbox" name="espanhol" id="espanhol"><label for="espanhol">Espanhol</label><br>
+   <input type="checkbox" name="outors" id="outros"><label for="outros">Outros</label>
+</div>
+
+<div class="termos">
+    <input type="checkbox" name="autorizacao" id="autorizacao"><label for="autorizacao"></label>Termo de autorização para o streaming "Filme liberado para o streaming</label>
+</div>
+<br>
+
+<div class="botao-cadastro">
+   <button id="avancarCadastro">Cadastro</button>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
+</html>
